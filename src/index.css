@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Roboto;
+}
+
+@layer utilities {
+  .nav {
+    @apply relative duration-700  transition-all
+  }
+
+  .nav:hover {
+    @apply text-purple-900
+  }
+
+  .nav::after {
+    @apply content-[''] bg-purple-900 h-[2px] w-[0%] left-0 -bottom-2
+    rounded-xl absolute duration-700  transition-all ease-in-out  
+  }
+
+  .nav:hover::after {
+    @apply content-[''] bg-purple-900 h-[2px] w-[100%] left-0 -bottom-2
+    rounded-xl absolute
+  }
+}
