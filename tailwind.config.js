@@ -9,6 +9,15 @@ export default {
         roboto: ["Roboto", "sans-serif"],
         "roboto-mono": ["Roboto Mono", "sans-serif"],
       },
+      keyframes: {
+        image: {
+          '0%, 100%': { "border-radius": '60% 40% 30% 70%/60% 30% 70% 40%' },
+          '50%': { "border-radius": '30% 60% 70% 40%/50% 60% 30% 60%' },
+        }
+      },
+      animation: {
+        image: 'image 8s ease-in-out infinite',
+      }
     },
   },
   plugins: [],

@@ -7,6 +7,10 @@ body {
 }
 
 @layer utilities {
+  .clip-image {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+  }
+
   .nav {
     @apply relative duration-700  transition-all
   }

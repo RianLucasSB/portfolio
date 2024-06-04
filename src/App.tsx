@@ -24,7 +24,20 @@ function App() {
         </h1>
         <Nav />
       </header>
-      <button className="p-6 dark:text-white text-black" onClick={handleChangeTheme}>{theme === 'dark' ? 'light' : 'dark'} mode</button>
+
+      <main className=" h-full">
+        <div className="container mx-auto h-full">
+          <div className="flex flex-col justify-between items-center">
+          <span className="bg-clip-text text-transparent text-3xl font-bold font-roboto-mono bg-gradient-to-r from-pink-500 to-purple-900">
+            RIAN BOAS
+          </span>
+
+          <div className="animate-image bg-white h-32 w-32" />
+          </div>
+          
+        </div>
+      </main>
+
     </div>
   )
 }
