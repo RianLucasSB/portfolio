@@ -1,9 +1,39 @@
 @tailwind base;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+}
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto;
+  -webkit-font-smoothing: antialiased
+}
+
+.gd-carousel-wrapper {
+  position:relative;
+
+}
+
+.gd-carousel {
+  position:unset;
+
+  .react-multiple-carousel__arrow {
+      position:absolute;
+  }
+
+  .react-multiple-carousel__arrow--left {
+      left: calc(-3% + 1px)
+  }
+
+  .react-multiple-carousel__arrow--right {
+      right: calc(-3% + 1px)
+  }
 }
 
 @layer utilities {

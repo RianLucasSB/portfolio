@@ -1,6 +1,6 @@
 export function Nav() {
   const links = [
-    { path: '#', name: "Sobre" },
+    { path: '#about', name: "Sobre" },
     { path: '#projects', name: "Projetos" },
     { path: '#contact', name: "Contato" },
   ]
